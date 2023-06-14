@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+    nginx-task-one:
+        image: nginx:latest
+        container_name: nginx-cv
+        ports:
+            - '${PORT_NGINX}:80'
+        restart: unless-stopped
+        volumes:
+            # Это файлы сайтов
+            - ./dist:/usr/share/nginx/html
+            # Файлы логов
+            - ./logs:/var/log/nginx
+        env_file:
+            - .env
