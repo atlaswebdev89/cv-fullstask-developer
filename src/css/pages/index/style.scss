@@ -1,5 +1,10 @@
-h3 {
-	font-size: 16px;
-	border-radius: 50%;
-	color: red;
+// Импорт стилей для главной страницы
+@import "../../partials/header", "../../partials/footer", "../../partials/aside", "../../partials/main",
+	"../../modules/adaptive";
+
+.block-main {
+	grid-area: main;
+}
+.block-aside {
+	grid-area: aside;
 }

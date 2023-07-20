@@ -1,5 +1,4 @@
-h3 {
-	font-size: 16px;
-	border-radius: 50%;
-	color: red;
-}
+@import "modules/variables.scss", "modules/default", "modules/mixins.scss", "modules/media";
+
+// Импорт стилей для главной страницы
+@import "pages/index/style.scss";

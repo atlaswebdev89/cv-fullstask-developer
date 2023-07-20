@@ -17,6 +17,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 // Копирование файлов без обработки
 const CopyPlugin = require('copy-webpack-plugin')
+//
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = {
     mode: 'development',
@@ -96,8 +98,18 @@ module.exports = {
         new MiniCssExtractPlugin({
             // Один файл стилей для всех страниц
             filename: 'css/style.min.css',
+
             // Отдельный файл на каждую страницу (не уверен что правильно делать для каждой страницы свой файл стилей)
+            // Надо в js файлах менять подключенный файл css
             // filename: 'css/[name].min.css',
+        }),
+        // Это вместо devServer работает просто пушка Мне нравиться больше Хоте и devServer я не отключаю
+        new BrowserSyncPlugin({
+            // browse to http://localhost:3000/ during development,
+            // ./public directory is being served
+            host: 'localhost',
+            port: 3000,
+            server: { baseDir: ['dist'] },
         }),
     ],
     devServer: {

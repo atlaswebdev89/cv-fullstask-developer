@@ -3,6 +3,7 @@
         "@babel/core": "^7.22.5",
         "@babel/preset-env": "^7.22.5",
         "babel-loader": "^9.1.2",
+        "browser-sync-webpack-plugin": "^2.3.0",
         "browserify": "^17.0.0",
         "clean-webpack-plugin": "^4.0.0",
         "copy-webpack-plugin": "^11.0.0",
@@ -39,7 +40,7 @@
         "browserify:watch": "watchify site/js/modules/scripts.js -o site/js/bundle.js -v",
         "webpack:watch": "webpack --watch",
         "webpack:build": "webpack",
-        "webpack:serve": "webpack serve",
+        "webpack:serve": "webpack serve --live-reload",
         "gulp:dev": "cross-env MODE=dev gulp",
         "gulp:prod": "cross-env MODE=prod gulp",
         "gulp:build": "cross-env MODE=prod gulp build"

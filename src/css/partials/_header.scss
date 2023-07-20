@@ -1,0 +1,10 @@
+.header {
+	grid-area: header;
+	height: 60px;
+	background-color: green;
+}
+.person {
+	grid-area: person;
+	background-color: yellow;
+	height: 200px;
+}
