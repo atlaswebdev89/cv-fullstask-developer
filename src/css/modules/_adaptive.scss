@@ -1,4 +1,35 @@
-@include point-md {
+@include point-lg-992 {
+	.header {
+		.nav {
+			width: 100%;
+			justify-content: end;
+		}
+		.share-buttons {
+			justify-content: end;
+		}
+	}
+	.aside {
+		.hard-skills,
+		.soft-skills {
+			.icons-skils-list {
+				.icon-skils {
+					svg {
+						width: 60px;
+						height: 60px;
+					}
+					span {
+						font-size: 10px;
+					}
+				}
+			}
+		}
+	}
+	.person .person-foto {
+		height: 250px;
+		width: 250px;
+	}
+}
+@include point-md-768 {
 	.container {
 		grid-template-areas: "header" "person" "main";
 		grid-template-columns: 1fr;
@@ -10,49 +41,78 @@
 		position: fixed;
 		background-color: silver;
 	}
-}
-
-@include point-sm {
-	.main {
-		.item-house {
-			grid-template-rows: auto;
-			grid-template-columns: 1fr 1fr;
-			.images-houses {
-				grid-column: span 2;
-				grid-row: span 1;
-			}
-		}
-	}
-	.table-houses {
-		font-size: 12px;
-	}
-}
-
-@include point-ms {
-	.main {
-		padding: 0;
-		.item-house {
-			h2 {
-				font-size: 16px;
-				padding: 5px;
-			}
-			.list-value {
-				font-size: 10px;
-			}
-		}
-	}
-
 	.header {
-		.title-block {
-			h1 {
-				font-size: 20px;
-			}
-			p {
-				font-size: 12px;
+		justify-content: space-between;
+		.aside-burger,
+		.menu-burger {
+			display: flex;
+		}
+	}
+	.person {
+		padding: 20px 0;
+		.person-foto {
+			height: 300px;
+			width: 300px;
+		}
+	}
+
+	.nav {
+		display: block;
+		visibility: hidden;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0.95;
+		background-color: #1d1c1c;
+		transform: translateY(-200%);
+		transition: all 0.7s ease;
+		.navigations {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			a {
+				color: white;
 			}
 		}
 	}
-	.table-houses {
-		font-size: 10px;
+}
+
+@include point-sm-567 {
+	.person {
+		padding: 20px;
+	}
+}
+
+@include point-ms-480 {
+	.header {
+		padding: 0 20px;
+		margin-top: 10px;
+		flex-wrap: nowrap;
+		.share-buttons {
+			font-size: 12px;
+		}
+		.icons-share,
+		.lang-button {
+			font-size: 12px;
+		}
+	}
+	.person {
+		padding: 10px;
+		.person-foto {
+			height: 200px;
+			width: 200px;
+		}
+	}
+}
+@include point-xs-320 {
+	.before-main-header-text,
+	.after-main-header-text {
+		display: none;
+	}
+	.main-content {
+		border-radius: 5px;
 	}
 }

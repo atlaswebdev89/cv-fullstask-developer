@@ -1,4 +1,44 @@
 .main {
-	height: 800px;
-	background-color: blue;
+	height: 1200px;
+	border: 1px solid silver;
+	border-radius: 10px;
+
+	margin-bottom: 5px;
+	.main-header {
+		display: flex;
+		height: 40px;
+
+		.main-header-text {
+			height: 100%;
+			flex-grow: 2;
+			width: 200px;
+		}
+		.before-main-header-text,
+		.after-main-header-text {
+			flex-grow: 1;
+			background-color: #fff;
+		}
+		.before-main-header-text {
+			clip-path: polygon(
+				0 0,
+				/* лево верх */ 80% 0,
+				/* право верх */ 100% 100%,
+				/* право низ */ 0 100% /* лево низ */
+			);
+			border-top-left-radius: 5px;
+		}
+		.after-main-header-text {
+			clip-path: polygon(
+				20% 0,
+				/* лево верх */ 100% 0,
+				/* право верх */ 100% 100%,
+				/* право низ */ 0 100% /* лево низ */
+			);
+			border-top-right-radius: 5px;
+		}
+	}
+	.main-content {
+		background-color: #fff;
+		height: 300px;
+	}
 }

@@ -62,7 +62,7 @@ module.exports = {
                 test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'images/[name].[ext]',
+                    filename: 'images/[name]123.[ext]',
                 },
             },
             // Шрифты
@@ -93,7 +93,10 @@ module.exports = {
             chunks: ['404'],
         }),
         new CopyPlugin({
-            patterns: [{ from: pathSrc + '/images/dist/', to: 'images' }],
+            patterns: [
+                { from: pathSrc + '/images/dist/', to: 'images' },
+                // { from: pathSrc + '/fonts/dist/', to: 'fonts' },
+            ],
         }),
         new MiniCssExtractPlugin({
             // Один файл стилей для всех страниц

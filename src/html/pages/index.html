@@ -6,6 +6,813 @@
         <title>Document</title>
     </head>
     <body>
-        <h3>IndexS.html</h3>
+        <div class="wrapper">
+            <div class="container">
+                <header class="header">
+                    <div class="aside-burger">
+                        <span class="burger-line"></span>
+                    </div>
+                    <nav class="nav">
+                        <ul class="navigations">
+                            <li class="nav-item">
+                                <a href="">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Contacts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Contacts</a>
+                            </li>
+                        </ul>
+                        <div class="overlay-nav"></div>
+                    </nav>
+                    <div class="share-buttons">
+                        <a href="#" class="icons-share">
+                            <i class="icon-linkedin-squared"></i>
+                        </a>
+                        <a href="#" class="icons-share">
+                            <i class="icon-github-circled"></i>
+                        </a>
+                        <button class="icons-share">
+                            <i class="icon-file-pdf"></i>
+                        </button>
+                    </div>
+                    <div class="lang">
+                        <button class="lang-button en">en</button>
+                        <button class="lang-button ru lang-active">ru</button>
+                    </div>
+                    <div class="menu-burger">
+                        <span class="burger-line"></span>
+                    </div>
+                </header>
+
+                <div class="person">
+                    <div class="person-foto">
+                        <picture>
+                            <source
+                                type="image/webp"
+                                media="(max-width: 480px)"
+                                sizes="(max-width:480) 100vw"
+                                srcset="
+                                    images/profile-480.webp 1x,
+                                    images/profile-960.webp 2x
+                                "
+                            />
+                            <source
+                                type="image/jpeg"
+                                media="(max-width: 480px)"
+                                sizes="(max-width:480) 100vw"
+                                srcset="
+                                    images/profile-480.jpg 1x,
+                                    images/profile-960.jpg 2x
+                                "
+                            />
+
+                            <source
+                                type="image/webp"
+                                media="(max-width: 767px)"
+                                sizes="(max-width:767) 100vw"
+                                srcset="
+                                    images/profile-960.webp  1x,
+                                    images/profile-1080.webp 2x
+                                "
+                            />
+                            <source
+                                type="image/jpeg"
+                                media="(max-width: 767px)"
+                                sizes="(max-width:767) 100vw"
+                                srcset="
+                                    images/profile-960.jpg  1x,
+                                    images/profile-1080.jpg 2x
+                                "
+                            />
+                            <img
+                                class="img-responsive"
+                                alt="foto-person-cv"
+                                src="images/profile.jpg"
+                            />
+                        </picture>
+                    </div>
+                </div>
+                <div class="block-aside">
+                    <aside class="aside">
+                        <div class="hard-skills">
+                            <div class="hard-skills-header">
+                                <h3>skills/hard</h3>
+                            </div>
+                            <div class="icons-skils-list">
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="90">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/php.webp"
+                                        />
+                                    </svg>
+                                    <span>PHP</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="50">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/laravel.webp"
+                                        />
+                                    </svg>
+                                    <span>Laravel</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="65">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ccc"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            y="0"
+                                            x="25%"
+                                            id="image0"
+                                            width="50%"
+                                            height="100%"
+                                            href="images/mysql.svg"
+                                        />
+                                    </svg>
+                                    <span>Mysql</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="75">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ccc"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            y="0"
+                                            x="25%"
+                                            id="image0"
+                                            width="50%"
+                                            height="100%"
+                                            href="images/wordpress.webp"
+                                        />
+                                    </svg>
+                                    <span>Wordpress</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="75">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/github.svg"
+                                        />
+                                    </svg>
+                                    <span>Git</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="80">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/docker.webp"
+                                        />
+                                    </svg>
+                                    <span>Docker</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="70">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/linux.webp"
+                                        />
+                                    </svg>
+                                    <span>Linux</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="40">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/js.webp"
+                                        />
+                                    </svg>
+                                    <span>Javascript</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="40">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/nodejs.webp"
+                                        />
+                                    </svg>
+                                    <span>NodeJS</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="60">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/HTML 5.svg"
+                                        />
+                                    </svg>
+                                    <span>Html5</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="60">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/css3.webp"
+                                        />
+                                    </svg>
+                                    <span>Css3</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="65">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/bootstrap.webp"
+                                        />
+                                    </svg>
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="65">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/webpack.webp"
+                                        />
+                                    </svg>
+                                    <span>Webpack</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="70">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/gulp.webp"
+                                        />
+                                    </svg>
+                                    <span>Gulp</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="65">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/sass.webp"
+                                        />
+                                    </svg>
+                                    <span>Sass</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="soft-skills">
+                            <div class="soft-skills-header">
+                                <h3>skills/soft</h3>
+                            </div>
+                            <div class="icons-skils-list">
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="40">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/jira.webp"
+                                        />
+                                    </svg>
+                                    <span>Jira</span>
+                                </div>
+
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="60">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/trello.webp"
+                                        />
+                                    </svg>
+                                    <span>Trello</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="50">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ccc"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            y="0"
+                                            x="25%"
+                                            id="image0"
+                                            width="50%"
+                                            height="100%"
+                                            href="images/prometheus.svg"
+                                        />
+                                    </svg>
+                                    <span>Prometheus</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="55">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ccc"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            y="0"
+                                            x="25%"
+                                            id="image0"
+                                            width="50%"
+                                            height="100%"
+                                            href="images/grafana.svg"
+                                        />
+                                    </svg>
+                                    <span>Grafana</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="70">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/elastic.webp"
+                                        />
+                                    </svg>
+                                    <span>Elastic stack</span>
+                                </div>
+                                <div class="icon-skils">
+                                    <svg viewbox="0 0 200 200" data-value="35">
+                                        <circle
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="rgba(196, 196, 196, 0.40)"
+                                            stroke-width="10"
+                                            stroke="#ebebeb"
+                                        />
+                                        <circle
+                                            class="meter"
+                                            r="80"
+                                            cx="100"
+                                            cy="100"
+                                            fill="none"
+                                            stroke-width="10"
+                                            stroke="#3B5999"
+                                            stroke-linecap="round"
+                                            stroke-dasharray=" 0 502"
+                                            stroke-dashoffset="125"
+                                        />
+                                        <image
+                                            x="25%"
+                                            y="25%"
+                                            width="50%"
+                                            height="50%"
+                                            href="images/seo.webp"
+                                        />
+                                    </svg>
+                                    <span>Seo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="block-main">
+                    <main class="main">
+                        <div class="main-header">
+                            <div class="before-main-header-text"></div>
+                            <div class="main-header-text"></div>
+                            <div class="after-main-header-text"></div>
+                        </div>
+                        <div class="main-content"></div>
+                    </main>
+                    <footer class="footer"></footer>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

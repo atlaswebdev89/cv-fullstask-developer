@@ -1,0 +1,723 @@
+@charset "UTF-8";
+/* flex box*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  scroll-behavior: smooth;
+  background-color: #000;
+}
+
+.body-overlay {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: start;
+  position: relative;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  max-width: 1440px;
+  grid-template-areas: "header header" "person main" "aside main";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  padding: 0 5px;
+  border: 1px solid #000;
+  background: linear-gradient(183deg, #ffc803 16.42%, #00c2ff 99.73%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Poppins;
+}
+
+.overlay {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.7);
+  z-index: 10;
+  transition: all 0.2s ease-out;
+}
+
+.overlay-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-Thin.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-Thin.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-ThinItalic.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-ThinItalic.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-ExtraLight.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-ExtraLight.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-ExtraLightItalic.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-ExtraLightItalic.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-Light.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-Light.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-LightItalic.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-LightItalic.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-Regular.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-Regular.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-Medium.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-Medium.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-MediumItalic.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-MediumItalic.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-SemiBold.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-SemiBoldItalic.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-SemiBoldItalic.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-Bold.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-Bold.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-BoldItalic.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-BoldItalic.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-ExtraBold.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-ExtraBold.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-ExtraBoldItalic.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-ExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-Black.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-Black.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../fonts/dist/Poppins/Poppins-BlackItalic.ttf") format("truetype"), url("../fonts/dist/Poppins/Poppins-BlackItalic.woff2") format("woff2"), url("../fonts/dist/Poppins/Poppins-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "fontello";
+  src: url("../fonts/dist/fontello/fontello.eot?25321356");
+  src: url("../fonts/dist/fontello/fontello.eot?25321356#iefix") format("embedded-opentype"), url("../fonts/dist/fontello/fontello.woff2?25321356") format("woff2"), url("../fonts/dist/fontello/fontello.woff?25321356") format("woff"), url("../fonts/dist/fontello/fontello.ttf?25321356") format("truetype"), url("../fonts/dist/fontello/fontello.svg?25321356#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?25321356#fontello') format('svg');
+  }
+}
+*/
+[class^=icon-]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-linkedin-1:before {
+  content: "\e800";
+} /* '' */
+.icon-github:before {
+  content: "\e801";
+} /* '' */
+.icon-github-circled:before {
+  content: "\f09b";
+} /* '' */
+.icon-file-pdf:before {
+  content: "\f1c1";
+} /* '' */
+.icon-linkedin-squared:before {
+  content: "\f30c";
+} /* '' */
+.icon-linkedin:before {
+  content: "\f318";
+} /* '' */
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-Thin.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-Thin.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-ThinItalic.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-ThinItalic.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-ExtraLight.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-ExtraLightItalic.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-ExtraLightItalic.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-Light.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-LightItalic.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-LightItalic.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-Regular.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-Medium.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-MediumItalic.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-MediumItalic.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-SemiBold.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-SemiBoldItalic.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-SemiBoldItalic.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-Bold.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-BoldItalic.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-BoldItalic.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-ExtraBold.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-ExtraBoldItalic.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-ExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-Black.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-Black.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/dist/Montserrat/Montserrat-BlackItalic.ttf") format("truetype"), url("../fonts/dist/Montserrat/Montserrat-BlackItalic.woff2") format("woff2"), url("../fonts/dist/Montserrat/Montserrat-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border: 1px solid silver;
+  padding: 0 40px;
+  margin-top: 20px;
+}
+.header .lang {
+  display: flex;
+  margin-left: 10px;
+}
+.header .lang .lang-active,
+.header .lang .lang-button:hover {
+  background-color: #337386;
+  color: white;
+}
+.header .share-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-grow: 2;
+  justify-content: center;
+}
+.header .lang-button,
+.header .icons-share {
+  background-color: transparent;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  outline: 0;
+  padding: 5px;
+  transition: 0.3s;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.header .lang-button {
+  margin: 5px;
+}
+.header .icons-share {
+  font-size: 20px;
+}
+.header .icons-share:hover {
+  color: #337386;
+}
+.header .aside-burger,
+.header .menu-burger {
+  display: none;
+}
+.header .menu-burger {
+  margin-left: 15px;
+}
+.header .menu-burger,
+.header .aside-burger {
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+.header .menu-burger .burger-line,
+.header .aside-burger .burger-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+.header .menu-burger .burger-line::after,
+.header .aside-burger .burger-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+}
+.header .menu-burger .burger-line::before,
+.header .aside-burger .burger-line::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+}
+
+.nav {
+  flex-grow: 3;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.nav .navigations {
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.nav .navigations li {
+  list-style: none;
+  padding: 10px;
+  z-index: 2;
+}
+.nav .navigations a {
+  text-decoration: none;
+  color: #000;
+}
+.nav .overlay-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.person {
+  grid-area: person;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid silver;
+  padding: 40px 0;
+}
+.person .person-foto {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.person .img-responsive {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(50%);
+}
+
+.footer {
+  height: 100px;
+  border: 1px solid silver;
+}
+
+.aside {
+  border: 1px solid silver;
+}
+.aside .hard-skills,
+.aside .soft-skills {
+  margin: 20px;
+}
+.aside .hard-skills .hard-skills-header,
+.aside .hard-skills .soft-skills-header,
+.aside .soft-skills .hard-skills-header,
+.aside .soft-skills .soft-skills-header {
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.aside .hard-skills .icons-skils-list,
+.aside .soft-skills .icons-skils-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(70px, 1fr));
+  justify-items: center;
+  align-items: start;
+  gap: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.aside .hard-skills .icons-skils-list .icon-skils,
+.aside .soft-skills .icons-skils-list .icon-skils {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+.aside .hard-skills .icons-skils-list .icon-skils svg,
+.aside .soft-skills .icons-skils-list .icon-skils svg {
+  width: 80px;
+  height: 80px;
+}
+.aside .hard-skills .icons-skils-list .icon-skils svg circle,
+.aside .soft-skills .icons-skils-list .icon-skils svg circle {
+  will-change: auto;
+  transition: all 850ms ease-in-out;
+}
+.aside .hard-skills .icons-skils-list .icon-skils span,
+.aside .soft-skills .icons-skils-list .icon-skils span {
+  font-style: normal;
+  color: #545454;
+  font-family: "Montserrat", "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.main {
+  height: 1200px;
+  border: 1px solid silver;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.main .main-header {
+  display: flex;
+  height: 40px;
+}
+.main .main-header .main-header-text {
+  height: 100%;
+  flex-grow: 2;
+  width: 200px;
+}
+.main .main-header .before-main-header-text,
+.main .main-header .after-main-header-text {
+  flex-grow: 1;
+  background-color: #fff;
+}
+.main .main-header .before-main-header-text {
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  border-top-left-radius: 5px;
+}
+.main .main-header .after-main-header-text {
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  border-top-right-radius: 5px;
+}
+.main .main-content {
+  background-color: #fff;
+  height: 300px;
+}
+
+@media (max-width: 992px) {
+  .header .nav {
+    width: 100%;
+    justify-content: end;
+  }
+  .header .share-buttons {
+    justify-content: end;
+  }
+  .aside .hard-skills .icons-skils-list .icon-skils svg,
+  .aside .soft-skills .icons-skils-list .icon-skils svg {
+    width: 60px;
+    height: 60px;
+  }
+  .aside .hard-skills .icons-skils-list .icon-skils span,
+  .aside .soft-skills .icons-skils-list .icon-skils span {
+    font-size: 10px;
+  }
+  .person .person-foto {
+    height: 250px;
+    width: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas: "header" "person" "main";
+    grid-template-columns: 1fr;
+  }
+  .block-aside {
+    transition: all 0.3s ease;
+    opacity: 0.5;
+    transform: translateX(1000px);
+    position: fixed;
+    background-color: silver;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .header .aside-burger,
+  .header .menu-burger {
+    display: flex;
+  }
+  .person {
+    padding: 20px 0;
+  }
+  .person .person-foto {
+    height: 300px;
+    width: 300px;
+  }
+  .nav {
+    display: block;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.95;
+    background-color: #1d1c1c;
+    transform: translateY(-200%);
+    transition: all 0.7s ease;
+  }
+  .nav .navigations {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .nav .navigations a {
+    color: white;
+  }
+}
+@media (max-width: 567px) {
+  .person {
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    padding: 0 20px;
+    margin-top: 10px;
+    flex-wrap: nowrap;
+  }
+  .header .share-buttons {
+    font-size: 12px;
+  }
+  .header .icons-share,
+  .header .lang-button {
+    font-size: 12px;
+  }
+  .person {
+    padding: 10px;
+  }
+  .person .person-foto {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media (max-width: 320px) {
+  .before-main-header-text,
+  .after-main-header-text {
+    display: none;
+  }
+  .main-content {
+    border-radius: 5px;
+  }
+}
+.block-main {
+  grid-area: main;
+}
+
+.block-aside {
+  grid-area: aside;
+}/*# sourceMappingURL=style.css.map */

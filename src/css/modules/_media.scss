@@ -1,29 +1,29 @@
-@mixin point-xs {
+@mixin point-xs-320 {
     @media (max-width: 320px) {
         @content;
     }
 }
-@mixin point-ms {
+@mixin point-ms-480 {
     @media (max-width: 480px) {
         @content;
     }
 }
-@mixin point-sm {
+@mixin point-sm-567 {
     @media (max-width: 567px) {
         @content;
     }
 }
-@mixin point-md {
+@mixin point-md-768 {
     @media (max-width: 768px) {
         @content;
     }
 }
-@mixin point-lg {
+@mixin point-lg-992 {
     @media (max-width: 992px) {
         @content;
     }
 }
-@mixin point-xl {
+@mixin point-xl-1200 {
     @media (max-width: 1200px) {
         @content;
     }
