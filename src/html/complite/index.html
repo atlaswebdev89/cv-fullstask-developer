@@ -1,816 +1,1228 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Home title</title>
     </head>
     <body>
         <div class="wrapper">
             <div class="container">
-                <header class="header">
-                    <div class="aside-burger">
-                        <span class="burger-line"></span>
-                    </div>
-                    <nav class="nav">
-                        <ul class="navigations">
-                            <li class="nav-item">
-                                <a href="">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="">Education</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="">Contacts</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="">Contacts</a>
-                            </li>
-                        </ul>
-                        <div class="overlay-nav"></div>
-                    </nav>
-                    <div class="share-buttons">
-                        <a href="#" class="icons-share">
-                            <i class="icon-linkedin-squared"></i>
-                        </a>
-                        <a href="#" class="icons-share">
-                            <i class="icon-github-circled"></i>
-                        </a>
-                        <button class="icons-share">
-                            <i class="icon-file-pdf"></i>
-                        </button>
-                    </div>
-                    <div class="lang">
-                        <button class="lang-button en">en</button>
-                        <button class="lang-button ru lang-active">ru</button>
-                    </div>
-                    <div class="menu-burger">
-                        <span class="burger-line"></span>
-                    </div>
-                </header>
+                 
+                    <!-- @format -->
 
-                <div class="person">
-                    <div class="person-foto">
-                        <picture>
-                            <source
-                                type="image/webp"
-                                media="(max-width: 480px)"
-                                sizes="(max-width:480) 100vw"
-                                srcset="
-                                    images/profile-480.webp 1x,
-                                    images/profile-960.webp 2x
-                                "
-                            />
-                            <source
-                                type="image/jpeg"
-                                media="(max-width: 480px)"
-                                sizes="(max-width:480) 100vw"
-                                srcset="
-                                    images/profile-480.jpg 1x,
-                                    images/profile-960.jpg 2x
-                                "
-                            />
+<header class="header">
+    <div class="aside-burger">
+        <span class="burger-line"></span>
+    </div>
+    <nav class="nav">
+        <ul class="navigations">
+            
+            <li class="nav-item">
+                <a href="#about">About</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="#education">Education</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="#skills">Skills</a>
+            </li>
+            
+        </ul>
+        <div class="overlay-nav"></div>
+    </nav>
+    <div class="share-buttons">
+        
+        <a href="#" class="icons-share">
+            <i class="icon-linkedin-squared"></i>
+        </a>
+        
+        <a href="#" class="icons-share">
+            <i class="icon-github-circled"></i>
+        </a>
+        
+        <button class="icons-share">
+            <i class="icon-file-pdf"></i>
+        </button>
+    </div>
+    <div class="lang">
+        <button class="lang-button en">en</button>
+        <button class="lang-button ru lang-active">ru</button>
+    </div>
+    <div class="menu-burger">
+        <span class="burger-line"></span>
+    </div>
+</header>
+ 
+                
+                
+                 
+                    <!-- @format -->
 
-                            <source
-                                type="image/webp"
-                                media="(max-width: 767px)"
-                                sizes="(max-width:767) 100vw"
-                                srcset="
-                                    images/profile-960.webp  1x,
-                                    images/profile-1080.webp 2x
-                                "
-                            />
-                            <source
-                                type="image/jpeg"
-                                media="(max-width: 767px)"
-                                sizes="(max-width:767) 100vw"
-                                srcset="
-                                    images/profile-960.jpg  1x,
-                                    images/profile-1080.jpg 2x
-                                "
-                            />
-                            <img
-                                class="img-responsive"
-                                alt="foto-person-cv"
-                                src="images/profile.jpg"
-                            />
-                        </picture>
-                    </div>
+<div class="person">
+    <div class="person-foto">
+        <picture>
+            <source
+                type="image/webp"
+                media="(max-width: 480px)"
+                sizes="(max-width:480) 100vw"
+                srcset="images/profile-480.webp 1x, images/profile-960.webp 2x"
+            />
+            <source
+                type="image/jpeg"
+                media="(max-width: 480px)"
+                sizes="(max-width:480) 100vw"
+                srcset="images/profile-480.jpg 1x, images/profile-960.jpg 2x"
+            />
+
+            <source
+                type="image/webp"
+                media="(max-width: 767px)"
+                sizes="(max-width:767) 100vw"
+                srcset="images/profile-960.webp 1x, images/profile-1080.webp 2x"
+            />
+            <source
+                type="image/jpeg"
+                media="(max-width: 767px)"
+                sizes="(max-width:767) 100vw"
+                srcset="images/profile-960.jpg 1x, images/profile-1080.jpg 2x"
+            />
+            <img
+                class="img-responsive"
+                alt="foto-person-cv"
+                src="images/profile.jpg"
+            />
+        </picture>
+    </div>
+    <div class="person-info">
+        <div class="person-name">
+            <div class="first-name">Darashuk</div>
+            <div class="second-name">Dzmitry</div>
+        </div>
+        <div class="person-descriptions">UI/UX PRODUCT - GRAPHICS DESIGNER CREATIVE DIRECTOR</div>
+    </div>
+</div>
+ 
+                
+                
+                 
+                    <!-- @format -->
+
+<div class="block-aside">
+    <aside class="aside">
+        <!-- prettier-ignore  -->
+        
+            <!-- @format -->
+
+<div class="aside-profile">
+    <div class="aside-profile-header">
+        <h3>PROFILE</h3>
+    </div>
+    <div class="profile-about">
+        <p>
+            I am a tech enthusiast, I am passionate about designs, goal driven,
+            quick to learn and a highly productive individual. I have various
+            industry ready design skills, I am experienced in various softwares
+            design tools, experienced in providing technical support to users,
+            collaborated on design projects and working in a team-oriented
+            environment. Both remotely and on site.
+        </p>
+    </div>
+</div>
+
+        
+
+        <div class="line"></div>
+
+        <!-- prettier-ignore  -->
+        
+            <!-- @format -->
+
+<div class="aside-contact">
+    <div class="phone-item">
+        <div class="phone-item-header">PHONE NUMBER</div>
+        <div class="item-value">
+            <p>
+                <a href="tel:+375(29)729-33-86">+375(29)729-33-86</a>
+            </p>
+        </div>
+    </div>
+    <div class="email-item">
+        <div class="email-item-header">EMAIL ADDRESS</div>
+        <div class="item-value">
+            <p>
+                <a href="mailto:atlas.webdev89@gmail.com">atlas.webdev89@gmail.com</a>
+            </p>
+        </div>
+    </div>
+    <div class="social-item">
+        <div class="social-item-header">SOCIAL</div>
+        <div class="item-value">
+            <p>
+                <a href="https://www.linkedin.com/in/dzmitry-doroshuk/">LinkedIn</a>
+            </p>
+        </div>
+        <div class="item-value">
+            <p>
+                <a href="https://github.com/atlaswebdev89">GitHub</a>
+            </p>
+        </div>
+        <div class="item-value">
+            <p>
+                <a href="http://t.me/atlas_it89">Telegram</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+        
+
+        <div class="line"></div>
+
+        <!-- prettier-ignore  -->
+         
+            <!-- @format -->
+
+<div class="lang">
+    <div class="lang-header">
+        <h3>languages</h3>
+    </div>
+
+    <div class="">
+        <ul class="lang-list">
+            <!-- prettier-ignore  -->
+            
+            <li class="lang-item">
+                <div class="lang-item-name">Russian</div>
+                <div class="lang-item-level">
+                    <ul class="list-level-star">
+                        <!-- prettier-ignore  -->
+                        
+                        <li><i class="icon-star"></i></li>
+                        
+                        <li><i class="icon-star"></i></li>
+                        
+                        <li><i class="icon-star"></i></li>
+                        
+                        <li><i class="icon-star"></i></li>
+                        
+                        <li><i class="icon-star"></i></li>
+                        
+                    </ul>
                 </div>
-                <div class="block-aside">
-                    <aside class="aside">
-                        <div class="hard-skills">
-                            <div class="hard-skills-header">
-                                <h3>skills/hard</h3>
-                            </div>
-                            <div class="icons-skils-list">
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="90">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/php.webp"
-                                        />
-                                    </svg>
-                                    <span>PHP</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="50">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/laravel.webp"
-                                        />
-                                    </svg>
-                                    <span>Laravel</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="65">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ccc"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            y="0"
-                                            x="25%"
-                                            id="image0"
-                                            width="50%"
-                                            height="100%"
-                                            href="images/mysql.svg"
-                                        />
-                                    </svg>
-                                    <span>Mysql</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="75">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ccc"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            y="0"
-                                            x="25%"
-                                            id="image0"
-                                            width="50%"
-                                            height="100%"
-                                            href="images/wordpress.webp"
-                                        />
-                                    </svg>
-                                    <span>Wordpress</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="75">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/github.svg"
-                                        />
-                                    </svg>
-                                    <span>Git</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="80">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/docker.webp"
-                                        />
-                                    </svg>
-                                    <span>Docker</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="70">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/linux.webp"
-                                        />
-                                    </svg>
-                                    <span>Linux</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="40">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/js.webp"
-                                        />
-                                    </svg>
-                                    <span>Javascript</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="40">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/nodejs.webp"
-                                        />
-                                    </svg>
-                                    <span>NodeJS</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="60">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/HTML 5.svg"
-                                        />
-                                    </svg>
-                                    <span>Html5</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="60">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/css3.webp"
-                                        />
-                                    </svg>
-                                    <span>Css3</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="65">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/bootstrap.webp"
-                                        />
-                                    </svg>
-                                    <span>Bootstrap</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="65">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/webpack.webp"
-                                        />
-                                    </svg>
-                                    <span>Webpack</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="70">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/gulp.webp"
-                                        />
-                                    </svg>
-                                    <span>Gulp</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="65">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/sass.webp"
-                                        />
-                                    </svg>
-                                    <span>Sass</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="soft-skills">
-                            <div class="soft-skills-header">
-                                <h3>skills/soft</h3>
-                            </div>
-                            <div class="icons-skils-list">
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="40">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/jira.webp"
-                                        />
-                                    </svg>
-                                    <span>Jira</span>
-                                </div>
-
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="60">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/trello.webp"
-                                        />
-                                    </svg>
-                                    <span>Trello</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="50">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ccc"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            y="0"
-                                            x="25%"
-                                            id="image0"
-                                            width="50%"
-                                            height="100%"
-                                            href="images/prometheus.svg"
-                                        />
-                                    </svg>
-                                    <span>Prometheus</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="55">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ccc"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            y="0"
-                                            x="25%"
-                                            id="image0"
-                                            width="50%"
-                                            height="100%"
-                                            href="images/grafana.svg"
-                                        />
-                                    </svg>
-                                    <span>Grafana</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="70">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/elastic.webp"
-                                        />
-                                    </svg>
-                                    <span>Elastic stack</span>
-                                </div>
-                                <div class="icon-skils">
-                                    <svg viewbox="0 0 200 200" data-value="35">
-                                        <circle
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="rgba(196, 196, 196, 0.40)"
-                                            stroke-width="10"
-                                            stroke="#ebebeb"
-                                        />
-                                        <circle
-                                            class="meter"
-                                            r="80"
-                                            cx="100"
-                                            cy="100"
-                                            fill="none"
-                                            stroke-width="10"
-                                            stroke="#3B5999"
-                                            stroke-linecap="round"
-                                            stroke-dasharray=" 0 502"
-                                            stroke-dashoffset="125"
-                                        />
-                                        <image
-                                            x="25%"
-                                            y="25%"
-                                            width="50%"
-                                            height="50%"
-                                            href="images/seo.webp"
-                                        />
-                                    </svg>
-                                    <span>Seo</span>
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
+            </li>
+            
+            <li class="lang-item">
+                <div class="lang-item-name">English</div>
+                <div class="lang-item-level">
+                    <ul class="list-level-star">
+                        <!-- prettier-ignore  -->
+                        
+                        <li><i class="icon-star"></i></li>
+                        
+                        <li><i class="icon-star"></i></li>
+                        
+                        <li><i class="icon-star"></i></li>
+                        
+                    </ul>
                 </div>
-                <div class="block-main">
-                    <main class="main">
-                        <div class="main-header">
-                            <div class="before-main-header-text"></div>
-                            <div class="main-header-text"></div>
-                            <div class="after-main-header-text"></div>
-                        </div>
-                        <div class="main-content"></div>
-                    </main>
-                    <footer class="footer"></footer>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+ 
+        
+
+         
+            <!-- @format -->
+
+<div class="hard-skills">
+    <div class="hard-skills-header">
+        <h3>skills/hard</h3>
+    </div>
+    <div class="icons-skils-list">
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="85">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/php.webp"
+                />
+            </svg>
+            <span>PHP</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="50">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/laravel.webp"
+                />
+            </svg>
+            <span>Laravel</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="65">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/mysql.svg"
+                />
+            </svg>
+            <span>Mysql</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="75">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/wordpress.webp"
+                />
+            </svg>
+            <span>Wordpress</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="75">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/github.svg"
+                />
+            </svg>
+            <span>Git</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="80">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/docker.webp"
+                />
+            </svg>
+            <span>Docker</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="70">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/linux.webp"
+                />
+            </svg>
+            <span>Linux</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="40">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/js.webp"
+                />
+            </svg>
+            <span>Javascript</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="40">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/nodejs.webp"
+                />
+            </svg>
+            <span>NodeJS</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="60">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/HTML 5.svg"
+                />
+            </svg>
+            <span>Html5</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="60">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/css3.webp"
+                />
+            </svg>
+            <span>Css3</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="65">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/bootstrap.webp"
+                />
+            </svg>
+            <span>Bootstrap</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="65">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/webpack.webp"
+                />
+            </svg>
+            <span>Webpack</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="70">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/gulp.webp"
+                />
+            </svg>
+            <span>Gulp</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="65">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/sass.webp"
+                />
+            </svg>
+            <span>Sass</span>
+        </div>
+        
+    </div>
+</div>
+<div class="soft-skills">
+    <div class="soft-skills-header">
+        <h3>skills/soft</h3>
+    </div>
+    <div class="icons-skils-list">
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="40">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/jira.webp"
+                />
+            </svg>
+            <span>Jira</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="60">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/trello.webp"
+                />
+            </svg>
+            <span>Trello</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="50">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/prometheus.svg"
+                />
+            </svg>
+            <span>Prometheus</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="55">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/grafana.svg"
+                />
+            </svg>
+            <span>Grafana</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="70">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/elastic.webp"
+                />
+            </svg>
+            <span>Elastic</span>
+        </div>
+        
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="35">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="images/seo.webp"
+                />
+            </svg>
+            <span>Seo</span>
+        </div>
+        
+    </div>
+</div>
+
+        
+
+        
+            <!-- @format -->
+
+<div class="other">
+    <div class="other-skills">
+        <div class="other-skills-header">
+            <h3>other SKILLS</h3>
+        </div>
+        <div class="other-skils-wrap">
+            <ul class="other-skills-list">
+                
+                <li>figma</li>
+                
+                <li>vagrant</li>
+                
+                <li>memcached</li>
+                
+                <li>redis</li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="tools">
+        <div class="tools-header">
+            <h3>tools</h3>
+        </div>
+        <div class="tools-wrap">
+            <ul class="other-tools-list">
+                
+                <li>phpstorm</li>
+                
+                <li>VS code</li>
+                
+                <li>figma</li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        
+
+        
+            <!-- @format -->
+
+<div class="hobbies">
+    <div class="hobbies-header">
+        <h3>hobbies</h3>
+    </div>
+    <div class="hobbies-wrap">
+        <ul class="hobbies-list">
+            
+            <li>phpstorm</li>
+            
+            <li>PingPong</li>
+            
+            <li>figma</li>
+            
+        </ul>
+    </div>
+</div>
+
+        
+    </aside>
+</div>
+ 
+                
+                
+                 
+                    <!-- @format -->
+
+<div class="block-main">
+    <main class="main">
+        <div class="main-header">
+            <div class="before-main-header-text"></div>
+            <div class="main-header-text">
+                <h2>curriculum vitae (CV)</h2>
+            </div>
+            <div class="after-main-header-text"></div>
+        </div>
+        <div class="main-content">
+            <!-- prettier-ignore  -->
+            
+                <!-- @format -->
+
+<div class="work-history">
+    <div class="workhistory-header">
+        <h2>Work History</h2>
+    </div>
+    <div class="work-history-list">
+        <!-- prettier-ignore  -->
+        
+        <div class="work-history-item">
+            <div class="item-name">Brest State Polytechnic College, Brest</div>
+            <div class="item-description">GOOGLE CREATIVE CAMPUS - CLARKSVILLE</div>
+            <div class="item-location">Brest, Belarus</div>
+            <div class="role-descriptions">
+                <div class="role-descriptions-header">
+                    <h4>Role Description</h4>
+                </div>
+                <!-- prettier-ignore  -->
+                
+                <ul class="role-list">
+                    
+                    <li class="role-list-item">123</li>
+                    
+                    <li class="role-list-item">1234125</li>
+                    
+                    <li class="role-list-item">hello</li>
+                    
+                    <li class="role-list-item">world</li>
+                    
+                </ul>
+                
+            </div>
+            <div class="item-date">2006-2009</div>
+        </div>
+        <div class="line"></div>
+        <!-- prettier-ignore  -->
+        
+        <div class="work-history-item">
+            <div class="item-name">Belarusian State University of Informatics and Radioelectronics</div>
+            <div class="item-description">GOOGLE CREATIVE CAMPUS - CLARKSVILLE</div>
+            <div class="item-location">Brest, Belarus</div>
+            <div class="role-descriptions">
+                <div class="role-descriptions-header">
+                    <h4>Role Description</h4>
+                </div>
+                <!-- prettier-ignore  -->
+                
+                <ul class="role-list">
+                    
+                    <li class="role-list-item">123</li>
+                    
+                    <li class="role-list-item">1234125</li>
+                    
+                    <li class="role-list-item">hello</li>
+                    
+                    <li class="role-list-item">world</li>
+                    
+                </ul>
+                
+            </div>
+            <div class="item-date">2009-2013</div>
+        </div>
+        <div class="line"></div>
+        <!-- prettier-ignore  -->
+        
+    </div>
+</div>
+
+            
+
+            
+                <!-- @format -->
+
+<div class="education">
+    <div class="education-header">
+        <h2>education</h2>
+    </div>
+    <div class="education-course">
+        <!-- prettier-ignore  -->
+        
+        <div class="education-item">
+            <div class="item-name">Brest State Polytechnic College, Brest</div>
+            <div class="item-description">GOOGLE CREATIVE CAMPUS - CLARKSVILLE</div>
+            <div class="item-date">2006-2009</div>
+        </div>
+        <div class="line"></div>
+        <!-- prettier-ignore  -->
+        
+        <div class="education-item">
+            <div class="item-name">Belarusian State University of Informatics and Radioelectronics</div>
+            <div class="item-description">GOOGLE CREATIVE CAMPUS - CLARKSVILLE</div>
+            <div class="item-date">2009-2013</div>
+        </div>
+        <div class="line"></div>
+        <!-- prettier-ignore  -->
+        
+    </div>
+</div>
+
+            
+
+            
+                <!-- @format -->
+
+<div class="training">
+    <div class="training-header">
+        <h2>training/certifications</h2>
+    </div>
+    <div class="training-course">
+        <!-- prettier-ignore  -->
+        
+        <div class="training-item">
+            <div class="item-name">GOOGLE I.T SUPPORT PROFESSIONAL-COMPUTER SCIENCE</div>
+            <div class="item-description">GOOGLE CREATIVE CAMPUS - CLARKSVILLE</div>
+            <div class="item-date">JAN, 2021- JUL, 2021</div>
+        </div>
+        <!-- prettier-ignore  -->
+        
+        <div class="line"></div>
+        <!-- prettier-ignore  -->
+         
+		
+        <div class="training-item">
+            <div class="item-name">GOOGLE I.T SUPPORT PROFESSIONAL-COMPUTER SCIENCE</div>
+            <div class="item-description">GOOGLE CREATIVE CAMPUS - CLARKSVILLE</div>
+            <div class="item-date">JAN, 2021- JUL, 2021</div>
+        </div>
+        <!-- prettier-ignore  -->
+         
+		
+    </div>
+</div>
+
+            
+
+            
+                <!-- @format -->
+
+<div class="projects">
+    <div class="projects-header">
+        <h2>projects</h2>
+    </div>
+    <div class="projects-list">
+        <ul class="projects-list-ul">
+            
+            <li class="project-item">
+                <div class="project-name">
+                    <a href="https://github.com/doroshuk89/test">Test task: Registration Authorization and Authentication(html + css + php + mysql) </a>
+                </div>
+                <div class="project-date">2022</div>
+                <!-- prettier-ignore  -->
+                
+                <div class="line"></div>
+                <!-- prettier-ignore  -->
+                
+            </li>
+            
+            <li class="project-item">
+                <div class="project-name">
+                    <a href="https://github.com/doroshuk89/wp-plugins-kurs-valut-belarusbank">Wordpress plugin: Exchange rates </a>
+                </div>
+                <div class="project-date">2020</div>
+                <!-- prettier-ignore  -->
+                
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+            
+        </div>
+    </main>
+</div>
+ 
+                
+                
+                 
+                    <!-- @format -->
+
+<footer class="footer">
+    <div class="copyright">
+        <span>Copyright &copy; atlas&Co 2023</span>
+    </div>
+</footer>
+ 
+                
                 </div>
             </div>
         </div>

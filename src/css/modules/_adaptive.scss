@@ -31,7 +31,7 @@
 }
 @include point-md-768 {
 	.container {
-		grid-template-areas: "header" "person" "main";
+		grid-template-areas: "header" "person" "main" "footer";
 		grid-template-columns: 1fr;
 	}
 	.block-aside {
@@ -78,11 +78,37 @@
 			}
 		}
 	}
+	.footer {
+		border: none;
+		padding-bottom: 30px;
+	}
 }
 
 @include point-sm-567 {
 	.person {
 		padding: 20px;
+		.person-info {
+			.person-descriptions {
+				font-size: 20px;
+			}
+			.person-name {
+				gap: 0;
+				padding-bottom: 10px;
+			}
+		}
+	}
+	.main {
+		.main-content {
+			padding: 20px 10px;
+			.training-header,
+			.education-header,
+			.workhistory-header,
+			.projects-header {
+				h2 {
+					font-size: 18px;
+				}
+			}
+		}
 	}
 }
 

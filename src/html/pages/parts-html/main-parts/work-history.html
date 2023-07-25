@@ -1,0 +1,33 @@
+<!-- @format -->
+
+<div class="work-history">
+    <div class="workhistory-header">
+        <h2>Work History</h2>
+    </div>
+    <div class="work-history-list">
+        <!-- prettier-ignore  -->
+        {% for history in data.historyWork%}
+        <div class="work-history-item">
+            <div class="item-name">{{history.name}}</div>
+            <div class="item-description">{{history.description}}</div>
+            <div class="item-location">{{history.location}}</div>
+            <div class="role-descriptions">
+                <div class="role-descriptions-header">
+                    <h4>Role Description</h4>
+                </div>
+                <!-- prettier-ignore  -->
+                {% if history.roles %}
+                <ul class="role-list">
+                    {% for role in history.roles%}
+                    <li class="role-list-item">{{role}}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            <div class="item-date">{{history.date}}</div>
+        </div>
+        <div class="line"></div>
+        <!-- prettier-ignore  -->
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<!-- @format -->
+
+<div class="block-aside">
+    <aside class="aside">
+        <!-- prettier-ignore  -->
+        {% block profile %}
+            {% include 'parts-html/aside-parts/profile.html' %}
+        {%endblock%}
+
+        <div class="line"></div>
+
+        <!-- prettier-ignore  -->
+        {% block contact %}
+            {% include 'parts-html/aside-parts/contact.html' %}
+        {%endblock%}
+
+        <div class="line"></div>
+
+        <!-- prettier-ignore  -->
+        {% block lang %} 
+            {% include 'parts-html/aside-parts/lang.html' %} 
+        {% endblock %}
+
+        {%block skills %} 
+            {% include 'parts-html/aside-parts/skills.html' %}
+        {%endblock %}
+
+        {% block otherSkills %}
+            {% include 'parts-html/aside-parts/other-skills.html' %}
+        {%endblock%}
+
+        {% block hobbies %}
+            {% include 'parts-html/aside-parts/hobbies.html' %}
+        {%endblock%}
+    </aside>
+</div>

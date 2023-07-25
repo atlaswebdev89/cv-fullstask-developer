@@ -1,0 +1,45 @@
+<!-- @format -->
+
+<div class="person">
+    <div class="person-foto">
+        <picture>
+            <source
+                type="image/webp"
+                media="(max-width: 480px)"
+                sizes="(max-width:480) 100vw"
+                srcset="images/profile-480.webp 1x, images/profile-960.webp 2x"
+            />
+            <source
+                type="image/jpeg"
+                media="(max-width: 480px)"
+                sizes="(max-width:480) 100vw"
+                srcset="images/profile-480.jpg 1x, images/profile-960.jpg 2x"
+            />
+
+            <source
+                type="image/webp"
+                media="(max-width: 767px)"
+                sizes="(max-width:767) 100vw"
+                srcset="images/profile-960.webp 1x, images/profile-1080.webp 2x"
+            />
+            <source
+                type="image/jpeg"
+                media="(max-width: 767px)"
+                sizes="(max-width:767) 100vw"
+                srcset="images/profile-960.jpg 1x, images/profile-1080.jpg 2x"
+            />
+            <img
+                class="img-responsive"
+                alt="foto-person-cv"
+                src="images/profile.jpg"
+            />
+        </picture>
+    </div>
+    <div class="person-info">
+        <div class="person-name">
+            <div class="first-name">{{data.firstName}}</div>
+            <div class="second-name">{{data.secondName}}</div>
+        </div>
+        <div class="person-descriptions">{{data.positionsJob}}</div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<!-- @format -->
+
+<div class="lang">
+    <div class="lang-header">
+        <h3>languages</h3>
+    </div>
+
+    <div class="">
+        <ul class="lang-list">
+            <!-- prettier-ignore  -->
+            {% for item in data.lang %}
+            <li class="lang-item">
+                <div class="lang-item-name">{{item.lang}}</div>
+                <div class="lang-item-level">
+                    <ul class="list-level-star">
+                        <!-- prettier-ignore  -->
+                        {% for i in range(0, item.level) %}
+                        <li><i class="{{item.icon}}"></i></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

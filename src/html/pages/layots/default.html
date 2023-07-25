@@ -1,0 +1,36 @@
+{% import "parts-html/data/globalVariables.html" as data %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                {% block header %} 
+                    {% include 'parts-html/header.html' %} 
+                {%endblock %}
+                
+                {% block person %} 
+                    {% include 'parts-html/person.html' %} 
+                {%endblock %}
+                
+                {% block aside %} 
+                    {% include 'parts-html/sidebar.html' %} 
+                {%endblock %}
+                
+                {% block main %} 
+                    {% include 'parts-html/main.html' %} 
+                {%endblock %}
+                
+                {% block footer %} 
+                    {% include 'parts-html/footer.html' %} 
+                {%endblock%}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

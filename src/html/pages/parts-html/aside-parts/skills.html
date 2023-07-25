@@ -1,0 +1,84 @@
+<!-- @format -->
+
+<div class="hard-skills">
+    <div class="hard-skills-header">
+        <h3>skills/hard</h3>
+    </div>
+    <div class="icons-skils-list">
+        {% for item in data.skillsHards %}
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="{{item.level}}">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="{{item.image}}"
+                />
+            </svg>
+            <span>{{item.name}}</span>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="soft-skills">
+    <div class="soft-skills-header">
+        <h3>skills/soft</h3>
+    </div>
+    <div class="icons-skils-list">
+        {% for item in data.skillsSoft %}
+        <div class="icon-skils">
+            <svg viewbox="0 0 200 200" data-value="{{item.level}}">
+                <circle
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="rgba(196, 196, 196, 0.40)"
+                    stroke-width="10"
+                    stroke="#ebebeb"
+                />
+                <circle
+                    class="meter"
+                    r="80"
+                    cx="100"
+                    cy="100"
+                    fill="none"
+                    stroke-width="10"
+                    stroke="#3B5999"
+                    stroke-linecap="round"
+                    stroke-dasharray=" 0 502"
+                    stroke-dashoffset="125"
+                />
+                <image
+                    x="25%"
+                    y="25%"
+                    width="50%"
+                    height="50%"
+                    href="{{item.image}}"
+                />
+            </svg>
+            <span>{{item.name}}</span>
+        </div>
+        {% endfor %}
+    </div>
+</div>

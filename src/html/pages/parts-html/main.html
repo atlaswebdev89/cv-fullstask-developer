@@ -1,0 +1,31 @@
+<!-- @format -->
+
+<div class="block-main">
+    <main class="main">
+        <div class="main-header">
+            <div class="before-main-header-text"></div>
+            <div class="main-header-text">
+                <h2>curriculum vitae (CV)</h2>
+            </div>
+            <div class="after-main-header-text"></div>
+        </div>
+        <div class="main-content">
+            <!-- prettier-ignore  -->
+            {% block workhistory %}
+                {% include 'parts-html/main-parts/work-history.html' %}
+            {%endblock%}
+
+            {% block education %}
+                {% include 'parts-html/main-parts/education.html' %}
+            {%endblock%}
+
+            {% block training %}
+                {% include 'parts-html/main-parts/training.html' %}
+            {%endblock%}
+
+            {% block projects %}
+                {% include 'parts-html/main-parts/example-projects.html' %}
+            {%endblock%}
+        </div>
+    </main>
+</div>

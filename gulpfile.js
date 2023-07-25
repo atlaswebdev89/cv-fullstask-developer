@@ -17,7 +17,7 @@ exports.images = tasks.images
 exports.default = series(
     // exports.clean,
     exports.start,
-    exports.fontsConvert,
+    // exports.fontsConvert,
     exports.images,
     parallel(exports.pages, exports.copyfonts),
     parallel(exports.watching)

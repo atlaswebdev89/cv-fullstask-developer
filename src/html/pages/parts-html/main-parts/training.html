@@ -1,0 +1,22 @@
+<!-- @format -->
+
+<div class="training">
+    <div class="training-header">
+        <h2>training/certifications</h2>
+    </div>
+    <div class="training-course">
+        <!-- prettier-ignore  -->
+        {% for course in data.training%}
+        <div class="training-item">
+            <div class="item-name">{{course.name}}</div>
+            <div class="item-description">{{course.description}}</div>
+            <div class="item-date">{{course.date}}</div>
+        </div>
+        <!-- prettier-ignore  -->
+        {% if loop.last != true %}
+        <div class="line"></div>
+        <!-- prettier-ignore  -->
+        {%endif%} 
+		{% endfor %}
+    </div>
+</div>

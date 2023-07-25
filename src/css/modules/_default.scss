@@ -28,7 +28,7 @@ body {
     display: grid;
     width: 100%;
     max-width: $max-width-page;
-    grid-template-areas: "header header" "person main" "aside main";
+    grid-template-areas: "header header" "person main" "aside main" "footer footer";
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     grid-gap: 10px;
@@ -55,4 +55,9 @@ body {
 .overlay-open {
     opacity: 1;
     visibility: visible;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }

@@ -1,0 +1,24 @@
+<!-- @format -->
+
+<div class="projects">
+    <div class="projects-header">
+        <h2>projects</h2>
+    </div>
+    <div class="projects-list">
+        <ul class="projects-list-ul">
+            {% for project in data.projects %}
+            <li class="project-item">
+                <div class="project-name">
+                    <a href="{{project.link}}">{{project.name}} </a>
+                </div>
+                <div class="project-date">{{project.date}}</div>
+                <!-- prettier-ignore  -->
+                {% if loop.last != true %}
+                <div class="line"></div>
+                <!-- prettier-ignore  -->
+                {%endif%}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

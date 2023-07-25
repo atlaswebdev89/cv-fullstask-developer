@@ -1,0 +1,34 @@
+<!-- @format -->
+
+<header class="header">
+    <div class="aside-burger">
+        <span class="burger-line"></span>
+    </div>
+    <nav class="nav">
+        <ul class="navigations">
+            {% for item in data.menu %}
+            <li class="nav-item">
+                <a href="{{item.url}}">{{item.title}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="overlay-nav"></div>
+    </nav>
+    <div class="share-buttons">
+        {% for item in data.social %}
+        <a href="{{item.url}}" class="icons-share">
+            <i class="{{item.icon}}"></i>
+        </a>
+        {% endfor %}
+        <button class="icons-share">
+            <i class="icon-file-pdf"></i>
+        </button>
+    </div>
+    <div class="lang">
+        <button class="lang-button en">en</button>
+        <button class="lang-button ru lang-active">ru</button>
+    </div>
+    <div class="menu-burger">
+        <span class="burger-line"></span>
+    </div>
+</header>

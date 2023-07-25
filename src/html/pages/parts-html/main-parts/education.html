@@ -1,0 +1,19 @@
+<!-- @format -->
+
+<div class="education">
+    <div class="education-header">
+        <h2>education</h2>
+    </div>
+    <div class="education-course">
+        <!-- prettier-ignore  -->
+        {% for course in data.education %}
+        <div class="education-item">
+            <div class="item-name">{{course.name}}</div>
+            <div class="item-description">{{course.description}}</div>
+            <div class="item-date">{{course.date}}</div>
+        </div>
+        <div class="line"></div>
+        <!-- prettier-ignore  -->
+        {% endfor %}
+    </div>
+</div>

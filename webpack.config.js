@@ -1,3 +1,5 @@
+/** @format */
+
 // path — встроенный в Node.js модуль
 const path = require('path')
 const pathSrc = path.resolve(__dirname, './src/')
@@ -67,7 +69,7 @@ module.exports = {
             },
             // Шрифты
             {
-                test: /\.(ttf|woff|woff2)$/,
+                test: /\.(ttf|woff|woff2|eot|svg)$/,
                 type: 'asset/resource',
                 generator: {
                     filename: 'fonts/[name].[ext]',

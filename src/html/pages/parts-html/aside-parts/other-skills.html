@@ -1,0 +1,28 @@
+<!-- @format -->
+
+<div class="other">
+    <div class="other-skills">
+        <div class="other-skills-header">
+            <h3>other SKILLS</h3>
+        </div>
+        <div class="other-skils-wrap">
+            <ul class="other-skills-list">
+                {% for other in data.otherSkills %}
+                <li>{{other}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="tools">
+        <div class="tools-header">
+            <h3>tools</h3>
+        </div>
+        <div class="tools-wrap">
+            <ul class="other-tools-list">
+                {% for other in data.tools %}
+                <li>{{other}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
