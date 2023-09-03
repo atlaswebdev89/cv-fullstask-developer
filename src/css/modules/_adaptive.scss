@@ -86,7 +86,6 @@
 
 @include point-sm-567 {
 	.person {
-		padding: 20px;
 		.person-info {
 			.person-descriptions {
 				font-size: 20px;
@@ -114,9 +113,12 @@
 
 @include point-ms-480 {
 	.header {
-		padding: 0 20px;
-		margin-top: 10px;
 		flex-wrap: nowrap;
+		border: 0;
+		.container-header {
+			padding: 0;
+			flex-wrap: nowrap;
+		}
 		.share-buttons {
 			font-size: 12px;
 		}
@@ -126,7 +128,6 @@
 		}
 	}
 	.person {
-		padding: 10px;
 		.person-foto {
 			height: 200px;
 			width: 200px;

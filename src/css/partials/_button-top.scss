@@ -1,0 +1,61 @@
+@keyframes pulse {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 30px transparent;
+		box-shadow: 0 0 0 30px transparent;
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 0 transparent;
+		box-shadow: 0 0 0 0 transparent;
+	}
+}
+
+.button-scroll-top {
+	width: 100%;
+	position: fixed;
+	display: flex;
+	opacity: 0;
+	visibility: hidden;
+	justify-content: center;
+	bottom: 20px;
+	transition: all 0.3s ease;
+	transform: translateY(100px);
+	.container-button-scroll-top {
+		width: 100%;
+		max-width: $max-width-page;
+		display: flex;
+		padding: 0 10px;
+		justify-content: end;
+		.up-btn-wrapper {
+			opacity: 0.7;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			border-radius: 30%;
+			border: 1px solid rgba(2, 2, 2, 0.5);
+			object-fit: cover;
+			transition: all 0.4s ease;
+			animation: pulse 2s infinite;
+			img {
+				opacity: 0.8;
+				padding: 3px;
+				height: 100%;
+				width: 100%;
+			}
+			&:hover {
+				opacity: 1;
+				animation: none;
+			}
+		}
+	}
+}
+.button-scroll-show {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}

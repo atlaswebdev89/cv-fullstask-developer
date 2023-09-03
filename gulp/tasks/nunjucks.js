@@ -17,7 +17,7 @@ module.exports = async function nunjucksHtml() {
                 'error',
                 notify.onError({
                     message: '<%= error.message %>',
-                    title: 'Sass Error!',
+                    title: 'Parser Error!',
                 })
             )
         )

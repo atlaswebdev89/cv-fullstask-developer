@@ -64,7 +64,7 @@ module.exports = {
                 test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'images/[name]123.[ext]',
+                    filename: 'images/[name].[ext]',
                 },
             },
             // Шрифты

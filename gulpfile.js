@@ -14,7 +14,7 @@ exports.fontsConvert = tasks.fonts.fontsConvert
 exports.images = tasks.images
 
 // Сборка для developer
-exports.default = series(
+exports.default = series( 
     // exports.clean,
     exports.start,
     // exports.fontsConvert,
