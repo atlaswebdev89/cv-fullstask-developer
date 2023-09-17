@@ -36,10 +36,17 @@
 	}
 	.block-aside {
 		transition: all 0.3s ease;
-		opacity: 0.5;
-		transform: translateX(1000px);
+		transform: translateX(-1000px);
 		position: fixed;
-		background-color: silver;
+		background: linear-gradient(183deg, #ffc803 16.42%, #00c2ff 99.73%);
+		z-index: 10;
+		overflow: auto;
+		height: 100%;
+		width: 80%;
+		.close-mobile-sidebar {
+			opacity: 0.8;
+			visibility: visible;
+		}
 	}
 	.header {
 		justify-content: space-between;

@@ -8,12 +8,29 @@ body {
     font-family: Inter, sans-serif;
     font-weight: 400;
     font-style: italic;
-
+    position: relative;
     background-color: $back-color-body;
 }
 
 .body-overlay {
     overflow: hidden;
+}
+
+.overlay-sidebar-body {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1d1c1c;
+    transition: all 0.4s ease;
+    z-index: 6;
+}
+.overlay-sidebar-open {
+    visibility: visible;
+    opacity: 0.9;
 }
 
 .wrapper {

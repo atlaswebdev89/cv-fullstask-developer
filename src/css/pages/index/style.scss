@@ -2,6 +2,7 @@
 @import "../../partials/header", "../../partials/footer", "../../partials/aside", "../../partials/main",
 	"../../modules/adaptive";
 
+@import "../../partials/preloader";
 .block-main {
 	grid-area: main;
 }

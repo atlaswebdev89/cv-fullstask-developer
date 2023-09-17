@@ -9,22 +9,27 @@ export default function () {
     // видимая высота экрана
     const windowHeight = document.documentElement.clientHeight
 
-    window.addEventListener('scroll', () => {
-        if (skillsArray.length > 0) {
-            skillsArray.forEach((item) => {
-                if (
-                    scrollY >=
-                    item.getBoundingClientRect().top +
-                        scrollY -
-                        windowHeight / 4
-                ) {
-                    setTimeout(() => {
-                        startProgressBar(item)
-                    }, 300)
-                    delete skillsArray[item]
-                }
-            })
-        }
+    const sidebarScroll = document.querySelector('.block-aside')
+    const arrayElementsEvents = [window, sidebarScroll]
+
+    arrayElementsEvents.forEach((item) => {
+        item.addEventListener('scroll', () => {
+            if (skillsArray.length > 0) {
+                skillsArray.forEach((item) => {
+                    if (
+                        scrollY >=
+                        item.getBoundingClientRect().top +
+                            scrollY -
+                            windowHeight / 4
+                    ) {
+                        setTimeout(() => {
+                            startProgressBar(item)
+                        }, 300)
+                        delete skillsArray[item]
+                    }
+                })
+            }
+        })
     })
 }
 

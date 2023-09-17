@@ -1,5 +1,26 @@
+<!-- @format -->
+
 {% set title = "Home title" %}
 <!---->
 {% set pageName = "Home" %}
 <!---->
 {%extends "layots/default.html" %}
+
+<!-- prettier-ignore  -->
+{% block preloader %}
+<div class="preloader preloader-show preloader-display">
+    <div class="preloader__wrapp loader">
+        <div class="preloader__one one bd_color"></div>
+        <div class="preloader__one two bd_color"></div>
+        <div class="preloader__one three bd_color"></div>
+        <div class="preloader__one four bd_color"></div>
+        <div class="preloader__two five bd_color"></div>
+        <div class="preloader__two sixt bd_color"></div>
+        <div class="preloader__two seven bd_color"></div>
+        <div class="preloader__two eight bd_color"></div>
+    </div>
+</div>
+{% endblock %} 
+{% block overlay %}
+<div class="overlay-sidebar-body"></div>
+{%endblock%}

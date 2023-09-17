@@ -12,20 +12,27 @@ import { startMenuEvent, dymanicPadding } from '../modules/fixedMenu'
 import { smoothScroll } from '../modules/smooth'
 import buttonTopFn from '../modules/buttonTop'
 import '../modules/test'
+
 import viewMobileMenu from '../modules/mobileMenu'
-console.log(viewMobileMenu)
+
+import viewSidebarMenu from '../modules/sidebarMenu'
+/**
+ * Preloader
+ */
+import '../modules/preloader'
 
 /**
  * Array import functions
  */
 const fnArray = [
-    viewMobileMenu,
     lazyloadSkills,
     smoothScroll,
     dymanicPadding,
     startMenuEvent,
     lazyload,
     buttonTopFn,
+    viewMobileMenu,
+    viewSidebarMenu,
 ]
 
 fnArray.forEach((fn) => {

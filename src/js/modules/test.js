@@ -32,14 +32,11 @@ buttonBackTop.childNodes.forEach((element) => {
 console.log(buttonBackTop.children)
 
 const elemArray = [...buttonBackTop.childNodes]
-console.log(elemArray)
 
 const arraS = [...buttonBackTop.children]
 arraS.forEach((elem) => {
     elem.addEventListener('click', (event) => {
         if (event.target.tagName.toLowerCase() === 'li') {
-            console.log(event.target.tagName.toLowerCase())
-
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth',
